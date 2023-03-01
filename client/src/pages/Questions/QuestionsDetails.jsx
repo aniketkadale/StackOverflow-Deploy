@@ -92,7 +92,7 @@ const QuestionsDetails = () => {
     const dispatch = useDispatch()
     const location = useLocation()
     console.log(location)
-    const url = 'http:localhost:3000'
+    const url = "https://stackoverflow-aniket.netlify.app/";
 
     const [Answer, setAnswer] = useState('')
 

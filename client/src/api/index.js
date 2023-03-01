@@ -1,7 +1,6 @@
 import axios from 'axios'
 
-const BASE_URL = process.env.BASE_URL
-const API = axios.create({baseURL: {BASE_URL}})
+const API = axios.create({ baseURL: 'https://stackoverflow-clone.herokuapp.com' });
 
 API.interceptors.request.use((req) => {
   if(localStorage.getItem('Profile')) {
